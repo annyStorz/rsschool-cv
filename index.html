@@ -47,8 +47,17 @@
             margin-bottom: 30px;
         }
 
-        #education{
+        .profile_photo{
+            padding: 20px;
+            border: 4px dotted #2a1c0e;
+            display: inline-block;
             margin-left: 50px;
+            position: relative;
+            top: -130px;
+        }
+
+        #education{
+            margin-left: 75px;
             width: 35%;
             display:inline-block;
             text-align: center;
@@ -72,12 +81,23 @@
         }
 
         #languages{
+            font-variant: small-caps;
             width: 25%;
             display: inline-block;
+            line-height: 350%;
             margin-right: 50px;
             position: relative;
-            left: 350px;
-            top: 100px;
+            left: 280px;
+            top: 80px;
+        }
+
+        #languages > div{
+            position: relative;
+            right: 20px;
+        }
+
+        #languages > div > img{
+            margin-right: 20px;
         }
 
         #activities{
@@ -87,11 +107,34 @@
             margin-left: 50px;
         }
 
-        img{
-            display: inline-block;
-            margin-left: 50px;
+        footer{
+            margin-top: 50px;
+            background-color: #efefc7;
+            color: #2a1c0e;
+            border-top: 3px solid #2a1c0e;
+        }
+
+        footer > img{
             position: relative;
-            top: -20px;
+            top: 35px;
+            left: 10px;
+        }
+
+        footer > a{
+            position: relative;
+            top: 27px;
+            left: 20px;
+        }
+
+        footer > .by{
+            left: 870px;
+        }
+
+        footer > p{
+            position: relative;
+            left: 1400px;
+            bottom: 20px;
+            margin-right: 1530px;
         }
     </style>
 </head>
@@ -100,9 +143,9 @@
     <h1>Anna Storozhenko</h1>
     <h3>frontend developer</h3>
 
-    <img src = "https://r2.mt.ru/r4/photo6DB1/20932292248-0/jpg/bp.webp" alt = "Profile photo" width=30% height=30%>
+    <img class="profile_photo" src="https://i.ibb.co/277mDWX/profile.jpg" alt="Profile photo" width=20% height=20%>
 
-    <section id = "contacts">
+    <section id="contacts">
     <div><p><b>Date of birth</b></p>
         <p>7 th of May 2002</p></div>
     <div><p><b>Address</b></p>
@@ -114,7 +157,7 @@
     <div><p><b>Marital status</b></p>
         <p>Single</p></div></section>
 
-    <section id = "education">
+    <section id="education">
     <h2>Education</h2>
     <div><p>Saratov State University, faculty of Computer Science and Information Technologies,
         department of System Analysis and Automatic Control</p>
@@ -130,25 +173,33 @@
     <p>June 2021</p></div>
     </section>
 
-    <section id = "skills">
+    <section id="skills">
     <h2>Skills</h2>
     <div>In-depth knowledge of Windows 10, Photoshop, Visual Studio and browsers.
         I have strong background in programming languages such as C++ and C#. Have basic knowledges of Python.
         Excellent written and communication skills, editing newsletters and letters. Easily look for necessary information.</div>
     </section>
     
-    <section id = "languages">
+    <section id="languages">
     <h2>Languages</h2>
-    <div>Native Russian</div>
-    <div>Upper-Intermediate English</div>
+    <div><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/250px-Flag_of_Russia.svg.png" alt = "Russian flag" width = 5% height = 5%><!-------
+    --->Native Russian</div>
+    <div><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Flag_of_the_United_States_%28Pantone%29.svg/250px-Flag_of_the_United_States_%28Pantone%29.svg.png" alt = "Russian flag" width = 5% height = 5%><!-------
+    --->Upper-Intermediate English</div>
     </section>
 
-    <section id = "activities">
+    <section id="activities">
     <h2>Extracurricular Activities</h2>
     <div>I am а quick learner, open to change, highly organized and detail-oriented.
         Able to prioritize and adapt well to new situations. Extremely motivated for career start.</div>
     </section>
 
     </main>
+
+    <footer>
+        <img src="https://rs.school/images/rs_school_js.svg" alt ="RS School logo" width=5% height=5%>
+        <a href="https://rs.school/js/">The Rolling Scopes School JS Course</a>
+        <a class="by" href="https://github.com/annyStorz">by Anna Storozhenko</a> <p>2021</p>
+    </footer>
 </body>
 </html>
